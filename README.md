@@ -1,6 +1,13 @@
-# Image Recognition based Conference Monitoring System in Rust
+# Conference Monitoring System based on Image Recognition in Rust
 
-This is an Image Recognition project that uses Rust Language and AWS Rekognition service in Rust to get the level of image similarity. The project can be run on the Raspberry Pi by cross compiling the existing project, details of which are given in the Readme.
+This is a Conference Monitoring Project based on Image Recognition that uses Rust Language and AWS Rekognition service to get the level of image similarity. The project can be run on the Raspberry Pi by cross compiling the existing project, details of which are given in the Readme. This project is in the form of Web-Services.
+
+# Project Use-Case
+
+As this project is based on Image Recognition, so here:
+* Each attendee's image will be stored in the database at the time of registration for a Conference.
+* At the time of the conference, all the images are compared with the clicked image of the conference.
+* If a registered attendee is present in the conference then its status will update to *Present* else status will remain *Absent* and a mail is sent to attendee's email address by specifying the absent status.
 
 We thrive for the best and want you to contribute towards a better Project. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for giving your valuable feedbacks and contributions.
 
